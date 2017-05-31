@@ -1,6 +1,6 @@
 var SpeedMeter = function(SensorPin, levelUpPin, levelDownPin, weighting, pulsesPerRev, timeOut, bounceTime) {
   var rpm = 0;
-  var level = 2;
+  var level = 1;
   var timeAct = 0;
   var timeOld = 0;
   var timeDiff = 0;
