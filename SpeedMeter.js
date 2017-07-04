@@ -101,7 +101,8 @@ var SpeedMeter = function(SensorPin, levelUpPin, levelDownPin, weighting, pulses
     var upperVal = 0;
     var idxLower = Math.floor(rpm / 10);
     var idxUpper = Math.ceil(rpm / 10);
-    if (idxLower > 1)
+    //if (idxLower > 1)
+    if (idxLower > 1 && idxLower <= 12)
     {
       lowerVal = power[level - 1][idxLower - 2];
     }
